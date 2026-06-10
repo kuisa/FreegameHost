@@ -26,6 +26,7 @@ TG_TOKEN = os.getenv("TG_TOKEN")  # tg通知token
 TG_CHAT_ID = os.getenv("TG_CHAT_ID")  # tg通知chat_id
 COOKIE = os.getenv("COOKIE")  # cookies
 SERVERNUM = os.getenv("NUM")  # 服务器编号
+AREA = os.getenv("AREA")  # 服务器位置
 
 # 目标 URL
 URL_APP_PANEL = f"https://panel.freegamehost.xyz/server/{SERVERNUM}"
@@ -315,7 +316,7 @@ class FreegameHostRenewal:
 
                 if final_screenshot:
                     # 发送 TG 通知
-                    msg = f"✅ FreegameHost 续期成功\n\n🕒 服务器剩余到期时间为: {timestamp}\n"
+                    msg = f"🚀FreegameHost 续期成功\n✅服务器：{AREA}\n🕒 服务器剩余到期时间为: {timestamp}\n"
                     self.send_telegram_notify(msg, final_screenshot)
                 else:
                     msg = f"❌ FreegameHost 续期失败\n\n"
