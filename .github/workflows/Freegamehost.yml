@@ -47,6 +47,7 @@ jobs:
         TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}  # 映射 Secret
         COOKIE: ${{ secrets.COOKIE }}  # 映射 Secret
         NUM: ${{ secrets.NUM }}  # 映射 Secret
+        AREA: ${{ secrets.AREA }}  # 映射 Secret
       run: |
         # 使用 xvfb 运行以支持强力过人机验证模式
         xvfb-run -a python freegamehost.py
