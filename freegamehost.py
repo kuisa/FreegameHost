@@ -104,7 +104,7 @@ class FreegameHostRenewal:
                     for (var i = 0; i < buttons.length; i++) {
                         var text = (buttons[i].textContent || '').trim().toLowerCase().replace(/\s+/g, '');
                         if (
-                          text === 'Consent' ||
+                          text === 'consent' ||
                           text === 'accept' ||
                           text === 'agree' ||
                           text === 'acceptall' ||
