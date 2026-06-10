@@ -104,7 +104,7 @@ class FreegameHostRenewal:
                     for (var i = 0; i < buttons.length; i++) {
                         var text = (buttons[i].textContent || '').trim().toLowerCase().replace(/\s+/g, '');
                         if (
-                          text === 'consent' ||
+                          text === 'Consent' ||
                           text === 'accept' ||
                           text === 'agree' ||
                           text === 'acceptall' ||
@@ -228,7 +228,7 @@ class FreegameHostRenewal:
                     # ... 省略登录失败处理 ...
                     panel_screenshot = f"{self.screenshot_dir}/panel.png"
                     sb.save_screenshot(panel_screenshot)
-                    self.send_telegram_notify("❌再次进入面板失败", panel_screenshot)
+                    self.send_telegram_notify("❌进入面板失败", panel_screenshot)
                     self.log(f"📸 失败截图已保存至: {self.screenshot_dir}/panel.png")
                     return
 
