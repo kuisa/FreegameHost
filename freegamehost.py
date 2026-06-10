@@ -316,10 +316,10 @@ class FreegameHostRenewal:
 
                 if final_screenshot:
                     # 发送 TG 通知
-                    msg = f"🚀FreegameHost 续期成功\n✅服务器：{AREA}\n🕒 服务器剩余到期时间为: {timestamp}\n"
+                    msg = f"🚀 FreegameHost 续期成功\n✅ 服务器：{AREA}\n🕒 服务器剩余到期时间为: {timestamp}\n"
                     self.send_telegram_notify(msg, final_screenshot)
                 else:
-                    msg = f"❌ FreegameHost 续期失败\n\n"
+                    msg = f"❌ FreegameHost 续期失败\n❌ 服务器：{AREA}\n🕒 服务器剩余到期时间为: {timestamp}\n"
                     self.send_telegram_notify(msg, final_screenshot)
 
             except Exception as e:
