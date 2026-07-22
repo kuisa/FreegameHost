@@ -2,8 +2,8 @@ name: Freegamehost Auto Renew
 
 on:
   workflow_dispatch:
-  #schedule:
-  #  - cron: '4 */4 * * *'
+  schedule:
+    - cron: '0 */3 * * *'
 
 # ⚠️ 必须添加权限配置，允许 Action 修改仓库文件
 permissions:
